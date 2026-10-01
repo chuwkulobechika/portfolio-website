@@ -9,8 +9,7 @@
     {
       "binding": "DB",
       "database_name": "portfolio-db",
-      // Replaced with the real id after `wrangler d1 create portfolio-db`.
-      "database_id": "00000000-0000-4000-8000-000000000000",
+      "database_id": "9f527b90-c153-4ac2-abba-ca1fc46b9ba4",
       "migrations_dir": "drizzle"
     }
   ],
