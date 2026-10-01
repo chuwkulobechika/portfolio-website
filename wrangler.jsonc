@@ -5,6 +5,11 @@
   "compatibility_date": "2026-05-01",
   "compatibility_flags": ["nodejs_compat"],
   "observability": { "enabled": true },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "chukwulobechika.com", "custom_domain": true },
+    { "pattern": "www.chukwulobechika.com", "custom_domain": true }
+  ],
   "d1_databases": [
     {
       "binding": "DB",
