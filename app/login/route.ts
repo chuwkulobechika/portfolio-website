@@ -56,6 +56,9 @@ function loginPage(returnTo: string, failed: boolean): Response {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Sign in · Portfolio CMS</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <style>
   :root { color-scheme: light dark; --bg: #f6f5f2; --card: #fff; --text: #141414; --muted: #6b6b6b; --line: #e3e1dc; --accent: #ff6b2c; }
   @media (prefers-color-scheme: dark) { :root { --bg: #0f0f0f; --card: #181818; --text: #f2f2f2; --muted: #9a9a9a; --line: #2a2a2a; } }

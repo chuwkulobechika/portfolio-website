@@ -111,6 +111,9 @@ export function renderCaseStudy(project: Project, nextProject: Project | null, c
     <meta name="description" content="${escapeHtml(project.shortDescription)}" />
     <meta name="theme-color" content="${escapeHtml(settings.themeColor)}" />
     <title>${escapeHtml(project.title)} — ${escapeHtml(nav.portfolioWordmark)}</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" href="/assets/geist-variable.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="/case-study.css" />
     <script src="/script.js" defer></script>
