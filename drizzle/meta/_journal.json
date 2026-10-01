@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789376327399,
+      "tag": "0000_lying_sleeper",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789546029807,
+      "tag": "0001_colorful_shotgun",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790368397611,
+      "tag": "0002_easy_zarda",
+      "breakpoints": true
+    }
+  ]
+}

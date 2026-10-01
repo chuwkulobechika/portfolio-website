@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lowbe Studio is Chukwulobe Chikadibia's experimental practice for design components, Framer studies, landing pages, interaction systems, and small digital products." />
+    <meta name="theme-color" content="#070707" />
+    <title>Lowbe Studio | Experiments by Chukwulobe Chikadibia</title>
+    <link rel="preload" href="/assets/geist-variable.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/assets/lowbe-hero.jpg" as="image" fetchpriority="high" />
+    <link rel="stylesheet" href="/studio/studio.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="studio-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header studio-header">
+      <a class="wordmark" href="/" aria-label="Return to Chukwulobe Chikadibia's portfolio"><span>Lowbe</span><span>Studio</span></a>
+      <nav class="desktop-nav" aria-label="Studio navigation"><a href="#experiments">Experiments</a><a href="#components">Components</a><a href="#reason">Why Lowbe</a></nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle><span class="theme-icon" aria-hidden="true"></span></button>
+        <a class="header-cta" href="mailto:hello@chukwulobechikadibia.com">Start a conversation</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button><span>Menu</span></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile studio navigation" hidden data-mobile-menu><a href="#experiments">Experiments</a><a href="#components">Components</a><a href="#reason">Why Lowbe</a><a href="/">Main portfolio</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="studio-hero" aria-labelledby="studio-hero-title">
+        <div class="studio-hero-copy reveal-sequence">
+          <p class="studio-kicker">Independent experimental practice</p>
+          <h1 id="studio-hero-title">Lowbe<br />Studio</h1>
+          <p class="studio-hero-note">Visual systems, Framer components, interaction studies, landing pages, and small digital products.</p>
+          <div class="studio-hero-actions"><a class="button studio-button" href="#experiments">Explore the work</a><a class="studio-text-link" href="/">Main portfolio <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <figure class="studio-hero-media reveal-visual"><img src="/assets/lowbe-hero.jpg" width="1586" height="992" alt="Folded smoked glass and brushed metal forming a precise abstract studio object" fetchpriority="high" /></figure>
+      </section>
+
+      <section class="studio-experiments studio-shell" id="experiments" aria-labelledby="experiments-title">
+        <header class="studio-section-heading"><h2 id="experiments-title">Work made to test a sharper idea.</h2><p>Self-directed studies that move between visual identity, interface behavior, responsive systems, and launch storytelling.</p></header>
+        <div class="experiment-grid">
+          <article class="experiment experiment-wide reveal-item">
+            <figure><img src="/assets/lowbe-tension.jpg" width="1536" height="1024" alt="Smoked glass bands moving through precision metal frames" loading="lazy" /></figure>
+            <div class="experiment-caption"><div><h3>Tension Engine</h3><p>An interaction study about momentum, resistance, and the point where motion becomes feedback.</p></div><span>Motion system</span></div>
+          </article>
+          <article class="experiment experiment-tall reveal-item">
+            <figure><img src="/assets/lowbe-assembly.jpg" width="1122" height="1402" alt="Layered translucent planes and an orange tension surface in a modular installation" loading="lazy" /></figure>
+            <div class="experiment-caption"><div><h3>Adaptive Assembly</h3><p>A modular component language built to stretch across compact and expressive compositions.</p></div><span>Component study</span></div>
+          </article>
+          <article class="experiment experiment-offset reveal-item">
+            <figure><img src="/assets/brand-explorations.jpg" width="2048" height="1324" alt="Editorial web and brand compositions for two digital product concepts" loading="lazy" /></figure>
+            <div class="experiment-caption"><div><h3>Signal Pages</h3><p>Landing-page directions where typography, product proof, and motion share one clear rhythm.</p></div><span>Web exploration</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="component-lab" id="components" aria-labelledby="components-title">
+        <div class="studio-shell">
+          <header class="component-heading"><h2 id="components-title">Components should reveal how they feel.</h2><p>Small working studies for type, state, and physical response. Designed as reusable behavior, not static decoration.</p></header>
+          <div class="component-grid">
+            <article class="component-module component-axis">
+              <header><h3>Variable type axis</h3><span>Live control</span></header>
+              <div class="type-sample" data-type-sample>Lowbe</div>
+              <label class="axis-control" for="type-axis"><span>Restrained</span><input id="type-axis" type="range" min="0" max="100" value="48" data-type-axis /><span>Expressive</span></label>
+            </article>
+            <article class="component-module component-state">
+              <header><h3>Responsive state</h3><span>Three moments</span></header>
+              <div class="state-demo" data-state-demo data-component-state="rest"><span>Open study</span><b aria-hidden="true">↗</b></div>
+              <p data-state-copy>Quiet until the interaction needs attention.</p>
+              <div class="state-tabs" role="group" aria-label="Preview component states"><button type="button" aria-pressed="true" data-state-tab="rest">Rest</button><button type="button" aria-pressed="false" data-state-tab="hover">Hover</button><button type="button" aria-pressed="false" data-state-tab="press">Press</button></div>
+            </article>
+            <article class="component-module component-press">
+              <header><h3>Direct response</h3><span>Pointer and touch</span></header>
+              <button class="pressure-button" type="button"><span>Hold the idea</span><b aria-hidden="true">Release</b></button>
+              <p>Feedback begins on press, stays readable, and returns along the same path.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="studio-manifesto" id="reason" aria-labelledby="reason-title">
+        <div class="manifesto-inner studio-shell">
+          <h2 class="manifesto-copy" id="reason-title" data-scroll-statement>
+            <span data-scroll-word>Lowbe</span> <span data-scroll-word>exists</span> <span data-scroll-word>because</span> <span data-scroll-word>not</span> <span data-scroll-word>every</span> <span data-scroll-word>good</span> <span data-scroll-word>idea</span> <span data-scroll-word>should</span> <span data-scroll-word>begin</span> <span data-scroll-word>with</span> <span data-scroll-word>a</span> <span data-scroll-word>brief.</span> <span data-scroll-word>Some</span> <span data-scroll-word>ideas</span> <span data-scroll-word>need</span> <span data-scroll-word>to</span> <span data-scroll-word>be</span> <span data-scroll-word>stretched,</span> <span data-scroll-word>prototyped,</span> <span data-scroll-word>broken,</span> <span data-scroll-word>and</span> <span data-scroll-word>rebuilt</span> <span data-scroll-word>before</span> <span data-scroll-word>they</span> <span data-scroll-word>become</span> <span data-scroll-word>useful.</span> <span data-scroll-word>The</span> <span data-scroll-word>studio</span> <span data-scroll-word>gives</span> <span data-scroll-word>those</span> <span data-scroll-word>ideas</span> <span data-scroll-word>room</span> <span data-scroll-word>to</span> <span data-scroll-word>move.</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="studio-practice studio-shell" aria-labelledby="practice-title">
+        <div class="practice-intro"><h2 id="practice-title">What lives here.</h2><p>Same foundation, more freedom. The studio pushes typography, composition, color, and interaction while keeping the work useful.</p></div>
+        <div class="practice-grid">
+          <article><h3>Components</h3><p>Framer components, responsive modules, and behavior studies that can become working systems.</p></article>
+          <article><h3>Launches</h3><p>Landing pages and campaign surfaces with a focused message and a memorable visual position.</p></article>
+          <article><h3>Concepts</h3><p>Mini products and early ideas shaped far enough to test their purpose, structure, and tone.</p></article>
+          <article><h3>Explorations</h3><p>Type, motion, image, and interface experiments that build a wider design vocabulary.</p></article>
+        </div>
+      </section>
+
+      <section class="studio-contact" aria-labelledby="studio-contact-title">
+        <div class="studio-shell studio-contact-inner"><p>Selected freelance projects and partnerships</p><h2 id="studio-contact-title">Bring the idea that needs more room.</h2><a class="button studio-button studio-button-light" href="mailto:hello@chukwulobechikadibia.com">Start a conversation</a></div>
+      </section>
+    </main>
+
+    <footer class="studio-footer studio-shell"><a href="/">Chukwulobe Chikadibia</a><span>Lowbe Studio</span><span>© 2026</span></footer>
+  </body>
+</html>
