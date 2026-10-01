@@ -1,4 +1,4 @@
-import { chatGPTSignOutPath } from "@/app/chatgpt-auth";
+import { signOutPath } from "@/app/session-auth";
 import { AdminClient } from "@/app/admin/admin-client";
 import { requireCmsAdmin } from "@/lib/admin-auth";
 import { listAdminProjects } from "@/lib/cms";
@@ -16,7 +16,7 @@ export default async function AdminPage() {
         <p className="admin-kicker">Portfolio CMS</p>
         <h1>This account does not have admin access.</h1>
         <p>Only the designated owner can use this CMS.</p>
-        <a href={chatGPTSignOutPath("/admin")}>Sign out and use the owner account</a>
+        <a href={signOutPath("/admin")}>Sign out and use the owner account</a>
       </main>
     );
   }
@@ -25,7 +25,7 @@ export default async function AdminPage() {
     <AdminClient
       initialProjects={projects}
       displayName={user.displayName}
-      signOutPath={chatGPTSignOutPath("/")}
+      signOutPath={signOutPath("/")}
     />
   );
 }

@@ -308,14 +308,6 @@ export async function reorderProjects(ids: string[]): Promise<void> {
   );
 }
 
-export async function verifyCmsAdmin(userId: string): Promise<boolean> {
-  const db = database();
-  const setting = await db
-    .prepare("SELECT value FROM cms_settings WHERE key = 'admin_user_id' LIMIT 1")
-    .first<{ value: string }>();
-  return setting?.value === userId;
-}
-
 export function getBucket(): R2Bucket {
   if (!env.BUCKET) throw new Error("The BUCKET binding is not configured.");
   return env.BUCKET;

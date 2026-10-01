@@ -1,5 +1,5 @@
-import { getChatGPTUser } from "@/app/chatgpt-auth";
-import { verifyCmsAdmin, getProjectBySlug, listProjects } from "@/lib/cms";
+import { getAdminUser } from "@/app/session-auth";
+import { getProjectBySlug, listProjects } from "@/lib/cms";
 import { renderCaseStudy } from "@/lib/render";
 import { getSiteContentMap } from "@/lib/site-content-store";
 
@@ -15,9 +15,8 @@ export async function GET(
 
   if (!project.published) {
     const isPreview = new URL(request.url).searchParams.get("preview") === "1";
-    const user = isPreview ? await getChatGPTUser() : null;
-    const allowed = user ? await verifyCmsAdmin(user.userId) : false;
-    if (!allowed) return new Response("Not found", { status: 404 });
+    const user = isPreview ? await getAdminUser() : null;
+    if (!user) return new Response("Not found", { status: 404 });
   }
 
   const published = await listProjects({ publishedOnly: true });
