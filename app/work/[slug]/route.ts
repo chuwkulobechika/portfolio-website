@@ -5,11 +5,16 @@ import { getSiteContentMap } from "@/lib/site-content-store";
 
 export const runtime = "edge";
 
+// Projects that were renamed; keeps old links and bookmarks working.
+const RENAMED_SLUGS: Record<string, string> = { lifevault: "jenari" };
+
 export async function GET(
   request: Request,
   context: { params: Promise<{ slug: string }> },
 ): Promise<Response> {
   const { slug } = await context.params;
+  const renamed = RENAMED_SLUGS[slug];
+  if (renamed) return Response.redirect(new URL(`/work/${renamed}`, request.url), 301);
   const project = await getProjectBySlug(slug);
   if (!project) return new Response("Not found", { status: 404 });
 
